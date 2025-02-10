@@ -100,3 +100,31 @@
   height: 100%;
   object-fit: contain; /* Byt till 'contain' om du vill se hela videon */
 }
+
+@media (max-width: 768px) {
+
+  /* Centrera bilderna */
+  .container {
+    align-items: center; /* Centrerar bilderna horisontellt */
+    margin-top: none; /* Ökar avståndet mellan texten och bilderna */
+  }
+
+  .column {
+    justify-content: center; /* Centrerar kolumnerna */
+    max-width: 100%; /* Utöka kolumnens bredd på mobilskärm */
+  }
+
+  .image-wrapper {
+    max-width: 60%; /* Gör bilderna större på mobil */
+  }
+
+  .wide-image-wrapper {
+    max-width: 100%; /* Låt breda bilder ta upp hela bredden */
+  }
+
+  .image-wrapper img,
+  .wide-image-wrapper img {
+    width: 100%; /* Säkerställer att bilder fyller sina containers */
+    height: auto;
+  }
+  }
