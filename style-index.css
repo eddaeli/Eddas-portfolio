@@ -11,11 +11,16 @@
 }
 
 .header-text-EddaEliasson a {
-    text-decoration: ; /* Tar bort understrykning */
+    text-decoration: none; /* Tar bort understrykning */
     color: inherit;        /* Ärver textfärgen från omgivande element */
 }
 
-  .header-text-Instagram a {
+
+.header-text-EddaEliasson a.about-link {
+      text-decoration: underline;
+    }
+
+.header-text-Instagram a {
     text-decoration: none; /* Tar bort understrykningen */
     color: inherit;        /* Ärver färgen från förälderelementet */
   }
