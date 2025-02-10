@@ -144,15 +144,3 @@
   height: 100%;
   object-fit: contain; /* Byt till 'contain' om du vill se hela videon */
 }
-
-#last-updated {
-  position: fixed;       /* Håller texten fast i ett hörn oberoende av resten */
-  bottom: 10px;          /* Avstånd från sidans nedre kant (justera vid behov) */
-  left: 5px;             /* Avstånd från sidans vänstra kant */
-  font-size: 15px;       /* Samma storlek som övrig text */
-  font-family: 'Times New Roman', serif;
-  color: black;
-  padding: 10px;
-  z-index: 1000;         /* Säkerställer att texten ligger över andra element om det behövs */
-}
-

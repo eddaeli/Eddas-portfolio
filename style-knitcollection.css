@@ -52,6 +52,11 @@
   color: inherit;        /* Ärver textfärgen från omgivande element */
 }
 
+.cred-link {
+  text-decoration: none;
+  color: inherit;
+}
+
 
 /* === CONTAINER & BILDSTILAR === */
 .container {
@@ -59,7 +64,7 @@
   flex-direction: column;
   align-items: flex-end;
   gap: 10px;
-  padding-top: 35rem;
+  padding-top: 40rem;
   width: 100%;
 }
 
