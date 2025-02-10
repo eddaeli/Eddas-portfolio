@@ -10,6 +10,12 @@
   transition: filter 0.3s ease;
 }
 
+.header-text-EddaEliasson a {
+  text-decoration: none; /* Tar bort understrykning */
+  color: inherit;        /* Ärver textfärgen från omgivande element */
+}
+
+
 .header-text-Tillbaka a {
   position: absolute;
   top: 5px;
@@ -36,8 +42,3 @@
   padding: 20px;
   line-height: 1.5; /* Förbättrar läsbarheten genom att ge radavstånd */
 }
-
-@media (max-width: 768px) {
-  
-  body
-  }
