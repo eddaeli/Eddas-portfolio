@@ -1,0 +1,138 @@
+/* === HEADER-STILAR === */
+.header-text-Animation {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  font-size: 15px;
+  font-family: 'Times New Roman', serif;
+  color: black;
+  padding: 10px;
+  transition: filter 0.3s ease;
+  max-width: 600px; /* Begränsar textens bredd */
+  word-wrap: break-word; /* Bryter långa ord om nödvändigt */
+  line-height: 1.5; /* Förbättrar läsbarheten */
+}
+
+.header-text-Animation a {
+    text-decoration: none; /* Tar bort understrykning */
+    color: inherit;        /* Ärver textfärgen från omgivande element */
+}
+
+.header-text-Instagram a {
+    text-decoration: none; /* Tar bort understrykningen */
+    color: inherit;        /* Ärver färgen från förälderelementet */
+}
+
+.header-text-Instagram {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  font-size: 15px;
+  font-family: 'Times New Roman', serif;
+  color: black;
+  padding: 10px;
+  transition: filter 0.7s ease-in-out;
+}
+
+.header-text-Tillbaka a {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  font-size: 15px;
+  font-family: 'Times New Roman', serif;
+  color: black;
+  padding: 10px;
+  transition: filter 0.7s ease-in-out;
+}
+
+.portfolio-link {
+  text-decoration: none; /* Tar bort understrykningen */
+  color: inherit;        /* Ärver textfärgen från omgivande element */
+}
+
+/* === CONTAINER & BILDSTILAR === */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+  padding-top: 35rem;
+  width: 100%;
+}
+
+.column {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+  max-width: 90%;
+}
+
+.image-wrapper {
+  position: relative;
+  max-width: 40%;
+}
+
+.image-wrapper img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* === STÖRRE LIGGANDE BILD === */
+.wide-image-wrapper {
+  position: relative;
+  width: 100%; 
+  max-width: 100%; /* Justera detta för att öka storleken ytterligare */
+  margin: 0 auto; /* Centrerar den på sidan */
+  margin-bottom: 40px; /* Ökar utrymmet under videon */
+}
+
+.wide-image-wrapper iframe {
+  width: 100%;
+  height: 600px; /* Anpassad höjd för att göra videon lika stor som gifen var */
+  aspect-ratio: 16 / 9; /* Behåller rätt proportioner */
+}
+
+.image-wrapper video {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Byt till 'contain' om du vill se hela videon */
+}
+
+/* Media query för mobilanpassning */
+@media (max-width: 768px) {
+  /* Centrera bilderna */
+  .container {
+    align-items: center; /* Centrerar bilderna horisontellt */
+    margin-top: none; /* Ökar avståndet mellan texten och bilderna */
+  }
+
+  .column {
+    justify-content: center; /* Centrerar kolumnerna */
+    max-width: 100%; /* Utöka kolumnens bredd på mobilskärm */
+  }
+
+  .image-wrapper {
+    max-width: 100%; /* Låt bilderna ta upp hela bredden på mobil */
+  }
+
+  /* För videor på mobilskärm */
+  .wide-image-wrapper {
+    max-width: 100%; /* Låt videon ta upp hela bredden */
+    margin: 0 auto;  /* Centrerar videon */
+    margin-top: -120px; /* Höjer videon närmare texten */
+    margin-bottom: 20px; /* Ökar utrymmet under videon */
+  }
+  .wide-image-wrapper iframe {
+    width: 100%;     /* Fyller bredden på mobil */
+    height: auto;    /* Anpassar höjden efter bredden */
+    aspect-ratio: 16 / 9;
+  }
+
+  /* För video på små enheter */
+  .image-wrapper video {
+    width: 100%;      /* Gör videon 100% bredd */
+    height: auto;     /* Låter höjden justeras beroende på bredd */
+    object-fit: contain; /* Bibehåller hela videons synlighet */
+  }
+}
