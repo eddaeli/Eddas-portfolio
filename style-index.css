@@ -163,7 +163,10 @@
     padding-left: 10px;
     width: 100%;
     margin-bottom: 40px; /* Ökar avståndet mellan texten och bilderna */
-  }
+
+}
+
+
 
   /* För att ta bort "Utbildning" och "Arbete" från sin nuvarande position och lägga dem längst ner på mobil */
   .left-text e,
